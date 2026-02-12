@@ -44,6 +44,7 @@ public class CameraXActivity extends AppCompatActivity {
     setContentView(binding.getRoot());
 
     previewView = binding.previewView;
+    previewView.setImplementationMode(PreviewView.ImplementationMode.COMPATIBLE);
 
     if (allPermissionsGranted()) {
       startCamera();
